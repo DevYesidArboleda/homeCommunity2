@@ -1,4 +1,5 @@
-Instalación
+#Instalación
+
 Descarga WordPress.
 Descomprime el .zip de WordPress en la carpeta pública de tu servidor (local o remoto).
 Renombra la carpeta wordpress por un nombre relacionado con el proyecto a desarrollar.
