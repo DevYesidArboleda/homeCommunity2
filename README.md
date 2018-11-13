@@ -1,4 +1,4 @@
-#Instalación
+# Instalación
 
 Descarga WordPress.
 Descomprime el .zip de WordPress en la carpeta pública de tu servidor (local o remoto).
