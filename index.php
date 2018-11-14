@@ -13,6 +13,8 @@
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/sponsor/pater.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/font.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/main.css">
         <script>
             document.documentElement.className = 'js';
             var supportsCssVars = function() {
@@ -42,7 +44,6 @@
               </video>
 
               <div class="pull-center-header">
-                
                 <h1 class="title tk-jaf-domus-titling-web">
                   <div class="logo-header">
                     <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_header.png" width="60%" alt="logo header" />
@@ -64,13 +65,12 @@
                 </div>
               </div>
             </div>
-            <div class="content content--fixed">
+            <div class="content-wrap content--fixed">
                 <header class="codrops-header">
-                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1>
-                    
+                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1> 
                 </header>
                 <div class="pull-right">
-                  <a class="button">comprar boleteria</a>
+                  <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
                   <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
                 <a class="pater" id="open_nav" href="javascript:void(0)" onclick="openNav()">
@@ -94,6 +94,12 @@
                 <a onclick="closeNav()" href="#ser_patrocinador">Conviertete en patrocinador</a>
               </div>
 
+            </div>
+            <div class="social-bar">
+              <a href="https://www.instagram.com/ila19medellin/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
+              <a href="https://twitter.com/ILA19Medellin" class="icon icon-twitter" target="_blank"></a>
+              <a href="https://co.linkedin.com/company/ixdamedellin" class="icon icon-linkedin1" target="_blank"></a>
+              <a href="mailto:news@ila19.ixdamedellin.co" class="icon icon-mail4" target="_blank"></a>
             </div>
             <div class="content-wrap" id="que_es">
                 <div class="content content--layout">
@@ -130,14 +136,7 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <div class="content-wrap" id="boleteria">
                 <div class="content content--layout content--layout-3">
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/5.jpg" alt="Some image" />
@@ -165,7 +164,7 @@
                           </li>
                         </ul>
 
-                        <a class="button">comprar boletas</a>
+                        <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
                       </div>
                     </div>
 
@@ -185,7 +184,7 @@
 
             <!-- Related demos -->
             <section class="content content--related">
-              <div class="footer">
+              <div class="content-wrap footer">
                 <br><br>
                 <h1 class="tk-jaf-domus-titling-web">PATROCINADORES</h1>
                 <div class="logo-footer">
@@ -207,15 +206,7 @@
                  <br>
                  <h2 style="font-weight: bold; text-transform: uppercase;" class="tk-jaf-domus-titling-web">suscribete a nuestro newsletter</h2>
                 <div class="footer-content">
-
                   <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
-                  <!--<form class="form-inline" method="post" action="send_email.php">
-                    <input type="text" id="name" placeholder="nombre.." name="name" required />
-                    
-                    <input type="email" id="email" placeholder="email.." name="email" required />
-                    
-                    <button type="submit">Enviar</button>
-                  </form>-->
                 </div>
 
                 <br>

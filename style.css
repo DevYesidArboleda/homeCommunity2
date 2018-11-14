@@ -503,7 +503,7 @@ a:focus {
 
 .boleteria {
 	grid-column: 2 / -1;
-	grid-row: 1 / 6;
+	grid-row: 1 /9;
 	left:200px; 
 }
 
@@ -755,7 +755,7 @@ a:focus {
 	}
 
 	.pull-right {
-		display: none;
+		
 	}
 
 	.deco--title {
@@ -789,7 +789,7 @@ a:focus {
 	}
 
 	.content_body {
-		font-size: 11px
+		font-size: 9px
 	}
 }
 
@@ -965,23 +965,22 @@ a:focus {
   }
 
   #open_nav {
-  	position: fixed;
-	  z-index: 10103;
-	  bottom: 50%;
-	  right: 10px;
-	  margin-bottom: -230px;
-	  width: 40px;
-	  height: 40px;
+	position: fixed;
+	z-index: 10103;
+	top: 25px;
+	right: 10px;
+	margin-bottom: -230px;
+	width: 40px;
+	height: 40px;
   }
-
+  
   #open_nav span {
     /* middle line of the hamburger icon */
     width: 48px;
-    height: 3px;
-    display: inline-block;
-    text-align: center;
-
-  }
+		height: 3px;
+		display: inline-block;
+		text-align: center;
+  } 
 
 } 
 
