@@ -42,9 +42,9 @@
               </video>
 
               <div class="pull-center-header">
-                <h1 class="title">interaction</h1>
+                <h1 class="title tk-jaf-domus-titling-web">interaction</h1>
                 <hr>
-                <h2 class="description">Latin america</h2>
+                <h2 class="description tk-jaf-domus-titling-web">De Octubre 31 al 02 de Noviembre 2019</h2>
                 <a class="button" id="openModal">ver video completo</a>
               </div>
               
@@ -61,7 +61,7 @@
             </div>
             <div class="content content--fixed">
                 <header class="codrops-header">
-                    <h1 class="codrops-header__title">ILA19</h1>
+                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1>
                     
                 </header>
                 <div class="pull-right">
@@ -95,7 +95,7 @@
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/4.jpg" alt="Some image" />
                     <div class="content_info que-es">
                       <div class="content_header" style="background-color: #FF8800;">
-                        <h3 class="content__title">ILA19</h3>
+                        <h3 class="content__title tk-jaf-domus-titling-web">ILA19</h3>
                       </div>
                       <div class="content_body">
                         <p class="content__desc">Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
@@ -114,7 +114,7 @@
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/2.jpg" alt="Some image" />
                     <div class="content_info lugar">
                       <div class="content_header" style="background-color: #00A3BB;">
-                        <h3 class="content__title">Medellín</h3>
+                        <h3 class="content__title tk-jaf-domus-titling-web">Medellín</h3>
                       </div>
                       <div class="content_body">
                         <p class="content__desc">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
@@ -133,12 +133,12 @@
             <br>
             <br>
             <br>
-            <div class="container" id="boleteria">
+            <div class="content-wrap" id="boleteria">
                 <div class="content content--layout content--layout-3">
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/5.jpg" alt="Some image" />
                     <div class="content_info boleteria">
                       <div class="content-header" style="background-color: #C10FC9;">
-                        <h3 class="content__title">Boleteria</h3>
+                        <h3 class="content__title tk-jaf-domus-titling-web">Boleteria</h3>
                       </div>
                       <div class="content_body">
                         <p class="content__desc">Super Early bird <br>
@@ -182,22 +182,25 @@
             <section class="content content--related">
               <div class="footer">
                 <br><br>
-                <h3 style="font-weight: bold;">PATROCINADORES</h3>
+                <h1 class="tk-jaf-domus-titling-web">PATROCINADORES</h1>
+                <div class="logo-footer">
+                  <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/patrocinador_footer.png" alt="logo footer" />
+                </div>
                 <hr>
                 <div class="footer-content">
                   <a class="button">conviertete en patrocinador</a>
                   <p>
                     Organizado por <span>ixda.org</span>
-                  </p>
+                  </p>&nbsp;&nbsp;&nbsp;
                   <p>
                     Mantenerse en contacto <span>ila19@ixda.org</span>
-                  </p>
+                  </p>&nbsp;&nbsp;&nbsp;
                   <p>
                     Local <span>IxDA Medellin</span>
-                  </p>
+                  </p>&nbsp;&nbsp;&nbsp;
                 </div>
                  <br>
-                 <h2 style="font-weight: bold; text-transform: uppercase;">suscribete a nuestro newsletter</h2>
+                 <h2 style="font-weight: bold; text-transform: uppercase;" class="tk-jaf-domus-titling-web">suscribete a nuestro newsletter</h2>
                 <div class="footer-content">
 
                   <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
@@ -213,7 +216,7 @@
                 <br>
                 <div class="footer-content">
                   <div class="logo-footer">
-                    logo
+                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_footer.png" alt="logo footer" />
                   </div>
                 </div>
                 <br><br>
