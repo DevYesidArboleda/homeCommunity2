@@ -70,8 +70,10 @@
                   <a class="button">comprar boleteria</a>
                   <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
-                <a class="pater" id="open_nav" href="#" onclick="openNav()">
-                    <span class="open_btn" >&#9776;</span>
+                <a class="pater" id="open_nav" href="javascript:void(0)" onclick="openNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </a>
             </div>
             <!-- The overlay -->
@@ -108,7 +110,7 @@
                         <br>
                           El tema para el Interaction Latin America 2019, será La Convergencia como punto donde la geografía, las personas, la cultura, la tecnología e ideologías se encuentran y evolucionan.
                         <br>
-ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovación, en pro de un mismo objetivo, la construcción de una sociedad mejor. </p>
+                          ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovación, en pro de un mismo objetivo, la construcción de una sociedad mejor. </p>
                       </div>
                       
                     </div>
@@ -126,7 +128,7 @@ ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovaci
                         <p class="content__desc">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
                         <br> Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como "La ciudad más innovadora" premio otorgado por "The Wall Street Journal Magazine" y Citibank con la colaboración de "The Urban Land Institute".
                         <br>
-La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.</p>
+                        La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.</p>
                       </div>
                     </div>
                 </div>
@@ -148,9 +150,9 @@ La ciudad se ha ha convertido en centro de negocios en la región, y el destino 
                       </div>
                       <div class="content_body">
                         <p class="content__desc">Super Early bird <br>
-Del 17 de noviembre al 15 de diciembre de 2018* ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
-* o hasta agotar existencias <br>
-Próximamente estaremos publicando información sobre los siguientes lotes de la boletería. ¡Síguenos en redes y mantente al tanto!</p>
+                         Del 17 de noviembre al 15 de diciembre de 2018* ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
+                         * o hasta agotar existencias <br>
+                         Próximamente estaremos publicando información sobre los siguientes lotes de la boletería. ¡Síguenos en redes y mantente al tanto!</p>
                         <ul class="timeline">
                           <li>
                             <p style="color: black; text-align: left;">Noviembre, 2018</p>
@@ -205,9 +207,7 @@ Próximamente estaremos publicando información sobre los siguientes lotes de la
                  <br>
                  <h2 style="font-weight: bold; text-transform: uppercase;">suscribete a nuestro newsletter</h2>
                 <div class="footer-content">
-
-                    <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
-                  
+                  <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
                 </div>
 
                 <br>
