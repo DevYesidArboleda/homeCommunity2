@@ -65,9 +65,10 @@
                 </div>
               </div>
             </div>
-            <div class="content-wrap content--fixed">
+            <div class="content content--fixed">
                 <header class="codrops-header">
-                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1> 
+                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1>
+                    
                 </header>
                 <div class="pull-right">
                   <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
@@ -136,7 +137,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="content-wrap" id="boleteria">
                 <div class="content content--layout content--layout-3">
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/5.jpg" alt="Some image" />
