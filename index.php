@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html <?php language_attributes();?>>
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="<?php bloginfo('charset');?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ILA19</title>
+        <title><?php wp_title('|', true, 'right'); ?></title>
+        <?php wp_head(); ?>
         <meta name="description" content="A page background effect where SVG shapes morph and transform on scroll" />
         <meta name="keywords" content="background, svg, morph, animation, scroll, shape, web development, css, javascript" />
         <meta name="author" content="Codrops" />
@@ -26,6 +27,7 @@
             }
             if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
         </script>
+        
     </head>
     <body class="demo-2 loading">
         <main>
@@ -60,10 +62,11 @@
             <div class="content content--fixed">
                 <header class="codrops-header">
                     <h1 class="codrops-header__title">ILA19</h1>
-
+                    
                 </header>
                 <div class="pull-right">
                   <a class="button">comprar boleteria</a>
+                  <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
                 <a class="pater" id="open_nav" href="#" onclick="openNav()">
                     <span class="open_btn" >&#9776;</span>
@@ -93,12 +96,11 @@
                         <h3 class="content__title">ILA19</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="content__desc">Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
+                        <br>
+                          El tema para el Interaction Latin America 2019, será La Convergencia como punto donde la geografía, las personas, la cultura, la tecnología e ideologías se encuentran y evolucionan.
+                        <br>
+ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovación, en pro de un mismo objetivo, la construcción de una sociedad mejor. </p>
                       </div>
                       
                     </div>
@@ -113,12 +115,10 @@
                         <h3 class="content__title">Medellín</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="content__desc">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
+                        <br> Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como "La ciudad más innovadora" premio otorgado por "The Wall Street Journal Magazine" y Citibank con la colaboración de "The Urban Land Institute".
+                        <br>
+La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.</p>
                       </div>
                     </div>
                 </div>
@@ -139,18 +139,21 @@
                         <h3 class="content__title">Boleteria</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                        <p class="content__desc">Super Early bird <br>
+Del 17 de noviembre al 15 de diciembre de 2018* ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
+* o hasta agotar existencias <br>
+Próximamente estaremos publicando información sobre los siguientes lotes de la boletería. ¡Síguenos en redes y mantente al tanto!</p>
                         <ul class="timeline">
                           <li>
-                            <p style="color: black; text-align: left;">March, 2014</p>
+                            <p style="color: black; text-align: left;">Noviembre, 2018</p>
                             <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
                           </li>
                           <li>
-                            <p style="color: black; text-align: left;">March, 2014</p>
+                            <p style="color: black; text-align: left;">Enero, 2019</p>
                             <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
                           </li>
                           <li>
-                            <p style="color: black; text-align: left;">April, 2014</p>
+                            <p style="color: black; text-align: left;">Enero, 2019</p>
                             <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
                           </li>
                         </ul>
@@ -195,6 +198,7 @@
                  <h2 style="font-weight: bold; text-transform: uppercase;">suscribete a nuestro newsletter</h2>
                 <div class="footer-content">
 
+                    <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
                   <form class="form-inline" method="post" action="send_email.php">
                     <input type="text" id="name" placeholder="nombre.." name="name" required />
                     
@@ -216,10 +220,11 @@
             </section>
 
         </main>
-
+        <?php wp_footer(); ?>
         <script src="<?php bloginfo('template_url'); ?>/js/imagesloaded.pkgd.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/anime.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/scrollMonitor.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/demo2.js"></script>
+        
     </body>
 </html>
