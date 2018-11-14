@@ -44,9 +44,9 @@
               </video>
 
               <div class="pull-center-header">
-                <h1 class="title">interaction</h1>
+                <h1 class="title"><img id="img1" src="<?php bloginfo('template_url'); ?>/img/logo_header.png"></h1>
                 <hr>
-                <h2 class="description">Latin america</h2>
+                <h2 class="description"></h2>
                 <a class="button" id="openModal">ver video completo</a>
               </div>
               
@@ -67,7 +67,7 @@
                     
                 </header>
                 <div class="pull-right">
-                  <a class="button">comprar boleteria</a>
+                  <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
                   <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
                 <a class="pater" id="open_nav" href="javascript:void(0)" onclick="openNav()">
@@ -95,8 +95,8 @@
             <div class="social-bar">
               <a href="https://www.instagram.com/ila19medellin/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
               <a href="https://twitter.com/ILA19Medellin" class="icon icon-twitter" target="_blank"></a>
-              <a href="https://www.youtube.com/c/devcodela" class="icon icon-linkedin" target="_blank"></a>
-              <a href="mailto:news@ila19.ixdamedellin.co" class="icon icon-mail" target="_blank"></a>
+              <a href="https://co.linkedin.com/company/ixdamedellin" class="icon icon-linkedin1" target="_blank"></a>
+              <a href="mailto:news@ila19.ixdamedellin.co" class="icon icon-mail4" target="_blank"></a>
             </div>
             <div class="content-wrap" id="que_es">
                 <div class="content content--layout">
@@ -168,7 +168,7 @@
                           </li>
                         </ul>
 
-                        <a class="button">comprar boletas</a>
+                        <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
                       </div>
                     </div>
 
@@ -191,6 +191,9 @@
               <div class="footer">
                 <br><br>
                 <h3 style="font-weight: bold;">PATROCINADORES</h3>
+                <div>
+                <h1 class="title"><img id="img1" src="<?php bloginfo('template_url'); ?>/img/patrocinador_footer.jpg"></h1>
+                </div>
                 <hr>
                 <div class="footer-content">
                   <a class="button">conviertete en patrocinador</a>
@@ -213,7 +216,7 @@
                 <br>
                 <div class="footer-content">
                   <div class="logo-footer">
-                    logo
+                  <h1 class="title"><img id="img1" src="<?php bloginfo('template_url'); ?>/img/logo_footer.jpg"></h1>
                   </div>
                 </div>
                 <br><br>

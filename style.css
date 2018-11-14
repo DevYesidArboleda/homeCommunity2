@@ -642,7 +642,7 @@ a:focus {
 	}
 
 	.pull-right {
-		display: none;
+		
 	}
 
 	.deco--title {
@@ -896,4 +896,8 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+#img1{
+	max-width: 100%;
 }

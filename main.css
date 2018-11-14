@@ -26,15 +26,15 @@ html {
 }
 
 .icon-twitter {
-	background: rgb(244, 244, 245);
+	background: #339DC5;
 }
 
-.icon-linkedin {
-	background: rgb(153, 151, 151);
+.icon-linkedin1 {
+	background: rgb(40, 155, 232);
 }
 
-.icon-mail {
-	background: #3F60A5;
+.icon-mail4 {
+	background: rgb(52, 54, 58);
 }
 
 .icon:first-child {
@@ -43,4 +43,10 @@ html {
 
 .icon:last-child {
 	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
