@@ -42,7 +42,12 @@
               </video>
 
               <div class="pull-center-header">
-                <h1 class="title tk-jaf-domus-titling-web">interaction</h1>
+                
+                <h1 class="title tk-jaf-domus-titling-web">
+                  <div class="logo-header">
+                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_header.png" width="60%" alt="logo header" />
+                  </div>
+                </h1>
                 <hr>
                 <h2 class="description tk-jaf-domus-titling-web">De Octubre 31 al 02 de Noviembre 2019</h2>
                 <a class="button" id="openModal">ver video completo</a>
