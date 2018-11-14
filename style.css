@@ -1046,14 +1046,36 @@ a:focus {
     font-size: .9em;
   }
 
-  #open_nav .open_btn{
-  	display: block;
-    width: auto;
-    float: none;
+
+  #open_nav {
+  	position: fixed;
+	  z-index: 10103;
+	  bottom: 50%;
+	  right: 10px;
+	  margin-bottom: -230px;
+	  width: 40px;
+	  height: 40px;
   }
+
+  #open_nav span {
+    /* middle line of the hamburger icon */
+    width: 48px;
+    height: 3px;
+    left: 50%;
+    bottom: 50%;
+    bottom: auto;
+    right: auto;
+  } 
 
 } 
 
+#open_nav span {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  display: block;
+}
 
 video {
 	object-fit: cover;

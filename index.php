@@ -13,6 +13,8 @@
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/sponsor/pater.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/font.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/main.css">
         <script>
             document.documentElement.className = 'js';
             var supportsCssVars = function() {
@@ -87,6 +89,12 @@
                 <a onclick="closeNav()" href="#ser_patrocinador">Conviertete en patrocinador</a>
               </div>
 
+            </div>
+            <div class="social-bar">
+              <a href="https://www.instagram.com/ila19medellin/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
+              <a href="https://twitter.com/ILA19Medellin" class="icon icon-twitter" target="_blank"></a>
+              <a href="https://www.youtube.com/c/devcodela" class="icon icon-linkedin" target="_blank"></a>
+              <a href="mailto:news@ila19.ixdamedellin.co" class="icon icon-mail" target="_blank"></a>
             </div>
             <div class="content-wrap" id="que_es">
                 <div class="content content--layout">
@@ -199,13 +207,7 @@ Próximamente estaremos publicando información sobre los siguientes lotes de la
                 <div class="footer-content">
 
                     <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]'); ?>
-                  <form class="form-inline" method="post" action="send_email.php">
-                    <input type="text" id="name" placeholder="nombre.." name="name" required />
-                    
-                    <input type="email" id="email" placeholder="email.." name="email" required />
-                    
-                    <button type="submit">Enviar</button>
-                  </form>
+                  
                 </div>
 
                 <br>
