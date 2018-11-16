@@ -11,7 +11,7 @@
 }
 
 .icon {
-	color: white;
+	color: rgba(255, 255, 255, 0.26);
 	text-decoration: none;
 	padding: .7rem;
 	display: flex;
@@ -19,19 +19,19 @@
 }
 
 .icon-instagram {
-	background: #2E406E;
+	background: none;
 }
 
 .icon-twitter {
-	background: #339DC5;
+	background: none;
 }
 
 .icon-linkedin1 {
-	background: rgb(40, 155, 232);
+	background: none;
 }
 
 .icon-mail4 {
-	background: rgb(52, 54, 58);
+	background: none;
 }
 
 .icon:first-child {

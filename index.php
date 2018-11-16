@@ -10,6 +10,7 @@
         <meta name="author" content="Codrops" />
         <!--<link rel="shortcut icon" href="favicon.ico">-->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/sponsor/pater.css" />
@@ -38,15 +39,15 @@
                     <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
                 </svg>
             </div>
-            <div class="content-video">
-              <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <div class="content-video content-wrap">
+              <video id="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
               </video>
 
               <div class="pull-center-header">
                 <h1 class="title tk-jaf-domus-titling-web">
                   <div class="logo-header">
-                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_header.png" width="60%" alt="logo header" />
+                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/Symbol.png" width="60%" alt="logo header" />
                   </div>
                 </h1>
                 <hr>
@@ -67,11 +68,13 @@
             </div>
             <div class="content content--fixed">
                 <header class="codrops-header">
-                    <h1 class="codrops-header__title tk-jaf-domus-titling-web">ILA19</h1>
+                    <h1 class="codrops-header__title tk-jaf-domus-titling-web"> 
+                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_horz.png" width="20%"/>
+                    </h1>
                     
                 </header>
                 <div class="pull-right">
-                  <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
+                  <a class="button" href="https://www.ticketcode.co/eventos/ila19" target="_blank">comprar boletas</a>
                   <?php echo do_shortcode('[google-translator]'); ?>
                 </div>
                 <a class="pater" id="open_nav" href="javascript:void(0)" onclick="openNav()">
@@ -110,7 +113,7 @@
                         <h3 class="content__title tk-jaf-domus-titling-web">ILA19</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
+                        <p class="content__desc" align="left">Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
                         <br>
                           El tema para el Interaction Latin America 2019, será La Convergencia como punto donde la geografía, las personas, la cultura, la tecnología e ideologías se encuentran y evolucionan.
                         <br>
@@ -129,7 +132,7 @@
                         <h3 class="content__title tk-jaf-domus-titling-web">Medellín</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
+                        <p class="content__desc" style="text-align: left;">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
                         <br> Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como "La ciudad más innovadora" premio otorgado por "The Wall Street Journal Magazine" y Citibank con la colaboración de "The Urban Land Institute".
                         <br>
                         La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.</p>
@@ -146,23 +149,19 @@
                         <h3 class="content__title tk-jaf-domus-titling-web">Boleteria</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc">Super Early bird <br>
-                         Del 17 de noviembre al 15 de diciembre de 2018* ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
-                         * o hasta agotar existencias <br>
-                         Próximamente estaremos publicando información sobre los siguientes lotes de la boletería. ¡Síguenos en redes y mantente al tanto!</p>
+                        <p class="content__desc" align="left">Super Early bird <br>
+                         ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
+                         * o hasta agotar existencias!</p>
                         <ul class="timeline">
                           <li>
-                            <p style="color: black; text-align: left;">Noviembre, 2018</p>
-                            <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
+                            <p style="color: black; text-align: left;">Super Early bird: 14 de Noviembre al 15 de Diciembre</p>
+                            <p style="color: black; text-align: left; font-weight: 100px;"> $ 100 USD</p>
                           </li>
                           <li>
-                            <p style="color: black; text-align: left;">Enero, 2019</p>
-                            <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
+                            <p style="color: black; text-align: left;">14 de Noviembre de 2018 al 15 de Marxo 2019</p>
+                            <p style="color: black; text-align: left; font-weight: 100px;"> $ 225 USD</p>
                           </li>
-                          <li>
-                            <p style="color: black; text-align: left;">Enero, 2019</p>
-                            <p style="color: black; text-align: left; font-weight: 100px;"> $ 0000000</p>
-                          </li>
+                          
                         </ul>
 
                         <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
@@ -227,6 +226,9 @@
         <script src="<?php bloginfo('template_url'); ?>/js/anime.min.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/scrollMonitor.js"></script>
         <script src="<?php bloginfo('template_url'); ?>/js/demo2.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
         
     </body>
 </html>

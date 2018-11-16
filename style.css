@@ -262,10 +262,11 @@ a:focus {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
-	min-height: 600px;
+	height: 80vh;
+	min-height: 900px;
 	pointer-events: none;
 }
+
 
 .content {
 	position: relative;
@@ -873,18 +874,21 @@ a:focus {
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+	.overlay a {font-size: 20px}
+	
+	
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
-    }
-
+	}
+	
     .content--layout .content_info {
     	display: flex;
 	    flex-direction: column;
-	    align-items: center;
-    }
+		align-items: center;
+		
+	}
 }
 
 .open_btn {
@@ -947,42 +951,78 @@ a:focus {
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 @media (max-width: 800px) {
-  .wpcf7-form input {
-    margin: 10px 0;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    align-items: stretch;
-    font-size: .9em;
-  }
-
-  .footer-content .button {
-  	display: block;
-    width: auto;
-    float: none;
-    font-size: .9em;
-  }
-
-  #open_nav {
-	position: fixed;
-	z-index: 10103;
-	top: 25px;
-	right: 10px;
-	margin-bottom: -230px;
-	width: 40px;
-	height: 40px;
+	.wpcf7-form input {
+	  margin: 10px 0;
+	}
+	
+	
+	.footer-content {
+	  flex-direction: column;
+	  align-items: stretch;
+	  font-size: .9em;
+	}
+	.que-es {
+		  grid-column: 2 / -1;
+		  grid-row: 2 / 3;
+		  left:-70px;
+		  height: 500px;
+	  }
+  
+	  .boleteria {
+		  grid-column: 2 / -1;
+		  grid-row: 2 /9;
+		  left:-70px;
+		  height: 700px;
+	  }
+  
+	  .content--layout-2 .content__img {
+		  grid-column: 1 / 3;
+		  grid-row: 1 / 3;
+	  }
+  
+	  .lugar {
+		  grid-column: 2 / -1;
+		  grid-row: 2 / 3;
+		  left:-70px;
+		  height: 500px;
+	  }
+  
+	  .pull-right .button {
+		  display: none;
+	  }
+  
+	  .footer{
+		  height: 25vh;
+	  }
+  
+	.footer-content .button {
+		display: block;
+	  width: auto;
+	  float: none;
+	  font-size: .9em;
+	}
+  
+	#open_nav {
+	  position: fixed;
+	  z-index: 10103;
+	  top: 25px;
+	  right: 10px;
+	  margin-bottom: -230px;
+	  width: 40px;
+	  height: 40px;
+	}
+   
+	#open_nav span {
+	  /* middle line of the hamburger icon */
+	  width: 48px;
+		  height: 3px;
+		  display: inline-block;
+		  text-align: center;
+	}
+  
   }
   
-  #open_nav span {
-    /* middle line of the hamburger icon */
-    width: 48px;
-		height: 3px;
-		display: inline-block;
-		text-align: center;
-  } 
-
-} 
+  
 
 #open_nav span {
   width: 28px;
@@ -1028,4 +1068,8 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+#video{
+	max-width: 100%;
 }
