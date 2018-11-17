@@ -55,7 +55,7 @@
                 </h1>
                 <hr>
                 <h2 class="description tk-jaf-domus-titling-web">De Octubre 31 al 02 de Noviembre 2019</h2>
-                <a data-width="900" data-toggle="lightbox" href="https://youtu.be/hLQl3WQQoQ0" target="_blank" class="button" id="openModal"><?php echo $lang['video']?></a>
+                <a data-width="900" data-toggle="lightbox" href="https://youtu.be/eqBUSP4NrI0" target="_blank" class="button" id="openModal"><?php echo $lang['video']?></a>
               </div>
               
               <!-- The modal -->
