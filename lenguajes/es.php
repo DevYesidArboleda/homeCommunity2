@@ -1,7 +1,7 @@
 <?php
 
 $lang = array(
-    "video"=> "Ver video",
+    "video"=> "Ver video completo",
     "videobuy" => "Comprar boletas",
     "from" => "Del 31 de octubre al 2 de noviembre de 2019",
     "ila1" => "Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.",
@@ -10,7 +10,7 @@ $lang = array(
     "med1" => "Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios. Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como La ciudad más innovadora premio otorgado por The Wall Street Journal Magazine y Citibank con la colaboración de The Urban Land Institute",
     "med2" => "La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.",
     "bol" => "BOLETERÍA",
-    "bol1" => "Super Early bird",
+    "bol1" => "¡No te pierdas la oportunidad de obtener tus boletas al precio más bajo!",
     "bol2" => "Del 17 de noviembre al 15 de diciembre de 2018*",
     "bol3" => "¡No pierdas la oportunidad de obtener tus boletas al precio más bajo!",
     "bol4" => "Super Early bird: 14 de Noviembre al 15 de Diciembre",
