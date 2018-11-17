@@ -276,12 +276,13 @@ a.button:focus {
 
 .content--fixed {
 	display: flex;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 100;
-	padding: 40px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 40px 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), #000000de, #00000000);
 }
 
 .content--fixed a {
@@ -645,8 +646,24 @@ a.button:focus {
 	align-items: center;
 }
 
-.codrops-header .right-buttons > div {
-	margin-right: 20px;
+.codrops-header .right-buttons  a.language-selector {
+	color: white;
+	font-size: 10px;
+	padding: 4px;
+    margin: 0 5px;
+}
+
+.codrops-header .right-buttons  a.language-selector:hover {
+	background: white;
+    color: black;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.codrops-header .right-buttons a.button {
+	margin-right: 10px;
 }
 
 

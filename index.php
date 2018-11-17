@@ -72,13 +72,13 @@
             <div class="content content--fixed">
                 <header class="codrops-header">
                     <h1> 
-                      <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_horz.png"/>
+                      <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/Logo.png"/>
                     </h1>
                     <div class="right-buttons">
                       <div>
                         <a class="button" href="https://www.ticketcode.co/eventos/ila19" target="_blank">comprar boletas</a>
-                        <a href="index.php?lang=es"><?php echo $lang['lang_es'] ?>
-                        <a href="index.php?lang=en"><?php echo $lang['lang_en'] ?>
+                        <a class="language-selector" href="index.php?lang=es"><?php echo $lang['lang_es'] ?>
+                        <a class="language-selector" href="index.php?lang=en"><?php echo $lang['lang_en'] ?>
                       </div>
                       <a id="open_nav" href="javascript:void(0)" onclick="openNav()">
                           <span></span>
@@ -120,7 +120,7 @@
                       <div class="content_info que-es">
                         <div class="content_header" style="background-color: #FF8800;">
                           <h3 class="content__title tk-jaf-domus-titling-web">
-                            <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_horz.png" width="40%"/>
+                            <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/Logo.png" width="40%"/>
                           </h3>
                         </div>
                         <div class="content_body">
