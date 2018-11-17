@@ -1,3 +1,6 @@
+<?php
+    include "config.php"
+?>
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
     <head>
@@ -52,7 +55,7 @@
                 </h1>
                 <hr>
                 <h2 class="description tk-jaf-domus-titling-web">De Octubre 31 al 02 de Noviembre 2019</h2>
-                <a data-width="900" data-toggle="lightbox" href="https://youtu.be/hLQl3WQQoQ0" target="_blank" class="button" id="openModal">ver video completo</a>
+                <a data-width="900" data-toggle="lightbox" href="https://youtu.be/hLQl3WQQoQ0" target="_blank" class="button" id="openModal"><?php echo $lang['video']?></a>
               </div>
               
               <!-- The modal -->
@@ -61,7 +64,7 @@
                 <div class="modal-content">
                   <span class="close-modal">&times;</span>
                   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                  <source src="<?php bloginfo('template_url'); ?>/img/ILA_PROMO_EDIT_H265_6.0.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -74,7 +77,8 @@
                     <div class="right-buttons">
                       <div>
                         <a class="button" href="https://www.ticketcode.co/eventos/ila19" target="_blank">comprar boletas</a>
-                        <?php //echo do_shortcode('[google-translator]'); ?>
+                        <a href="index.php?lang=es"><?php echo $lang['lang_es'] ?>
+                        <a href="index.php?lang=en"><?php echo $lang['lang_en'] ?>
                       </div>
                       <a id="open_nav" href="javascript:void(0)" onclick="openNav()">
                           <span></span>
@@ -121,13 +125,13 @@
                         </div>
                         <div class="content_body">
                           <p class="content__desc" align="left">
-                            Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
+                          <?php echo $lang['ila1']?>
                           </p><br>
                           <p class="content__desc" align="left">
-                            El tema para el Interaction Latin America 2019, será <strong>La Convergencia</strong> como punto donde la geografía, las personas, la cultura, la tecnología e ideologías se encuentran y evolucionan.
+                          <?php echo $lang['ila2']?>
                           </p><br>
                           <p class="content__desc" align="left">
-                            ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovación, en pro de un mismo objetivo, la construcción de una sociedad mejor. 
+                          <?php echo $lang['ila3']?>
                           </p>
                         </div>
                         
@@ -148,14 +152,11 @@
                         </div>
                         <div class="content_body">
                           <p class="content__desc" style="text-align: left;">
-                            Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
+                            <?php echo $lang['med1']?> 
                             </p><br>
                           <p class="content__desc" align="left">
-                          Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como "La ciudad más innovadora" premio otorgado por "The Wall Street Journal Magazine" y Citibank con la colaboración de "The Urban Land Institute".
+                            <?php echo $lang['med2']?> 
                           </p><br>
-                          <p class="content__desc" align="left">
-                            La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.
-                          </p>
                         </div>
                       </div>
                   </div>
@@ -169,10 +170,10 @@
                       <div class="image"></div>
                       <div class="content_info boleteria">
                         <div class="content-header">
-                          <h3 class="content__title tk-jaf-domus-titling-web">Boleteria</h3>
+                          <h3 class="content__title tk-jaf-domus-titling-web"><?php echo $lang['bol']?> </h3>
                         </div>
                         <div class="content_body">
-                            <h2>¡No pierdas la oportunidad de obtener tus boletas al precio más bajo!</h2>
+                            <h2><?php echo $lang['bol1']?></h2>
                           <ul class="timeline">
                             <li>
                               <p style="color: black; text-align: left;">SUPER EARLY BIRD:</p>
@@ -200,7 +201,7 @@
             <!-- Related demos -->
             <section class="container-fluid footer">
               <div>
-                <h4 class="tk-jaf-domus-titling-web">PATROCINADORES</h4>
+                <h4 class="tk-jaf-domus-titling-web"><?php echo $lang['pat1']?></h4>
                 <div class="logo-footer">
                   <img width="10%" src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/patrocinador_footer.png" alt="logo footer" />
                 </div>
@@ -208,10 +209,10 @@
                 <div class="footer-content">
                   <!-- <a class="button">conviertete en patrocinador</a> -->
                   <p>
-                  <strong>Organizado por</strong> <br><span>ixda.org</span>
+                  <strong><?php echo $lang['der2']?></strong> <br><span>ixda.org</span>
                   </p>
                   <p>
-                  <strong>Mantenerse en contacto </strong><br>info@ila19.ixdamedellin.co</span>
+                  <strong><?php echo $lang['der1']?> </strong><br>info@ila19.ixdamedellin.co</span>
                   </p>
                   <p>
                   <strong>Local</strong><br> <span>IxDA Medellin</span>
