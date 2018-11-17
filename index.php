@@ -1,3 +1,6 @@
+<?php
+    include "config.php"
+?>
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
     <head>
@@ -41,7 +44,7 @@
             </div>
             <div class="content-video content-wrap">
               <video id="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                <source src="<?php bloginfo('template_url'); ?>/img/ILA_PROMO_EDIT_H265_6.0.mp4" type="video/mp4">
               </video>
 
               <div class="pull-center-header">
@@ -52,7 +55,7 @@
                 </h1>
                 <hr>
                 <h2 class="description tk-jaf-domus-titling-web">De Octubre 31 al 02 de Noviembre 2019</h2>
-                <a class="button" id="openModal">ver video completo</a>
+                <a class="button" id="openModal"><?php echo $lang['video']?></a>
               </div>
               
               <!-- The modal -->
@@ -61,7 +64,7 @@
                 <div class="modal-content">
                   <span class="close-modal">&times;</span>
                   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                  <source src="<?php bloginfo('template_url'); ?>/img/ILA_PROMO_EDIT_H265_6.0.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -69,13 +72,14 @@
             <div class="content content--fixed">
                 <header class="codrops-header">
                     <h1 class="codrops-header__title tk-jaf-domus-titling-web"> 
-                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo_horz.png" width="20%"/>
+                    <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/logo.png" width="20%"/>
                     </h1>
                     
                 </header>
                 <div class="pull-right">
                   <a class="button" href="https://www.ticketcode.co/eventos/ila19" target="_blank">comprar boletas</a>
-                  <?php echo do_shortcode('[google-translator]'); ?>
+                  <a href="index.php?lang=es"><?php echo $lang['lang_es'] ?>
+                  <a href="index.php?lang=en"><?php echo $lang['lang_en'] ?>
                 </div>
                 <a class="pater" id="open_nav" href="javascript:void(0)" onclick="openNav()">
                     <span></span>
@@ -113,12 +117,10 @@
                         <h3 class="content__title tk-jaf-domus-titling-web">ILA19</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc" align="left">Es la conferencia de Diseño de Interacción, Experiencia de Usuario, Tecnología e Innovación más importante de América Latina.
+                        <p class="content__desc" align="left"><?php echo $lang['ila1']?>
                         <br>
-                          El tema para el Interaction Latin America 2019, será La Convergencia como punto donde la geografía, las personas, la cultura, la tecnología e ideologías se encuentran y evolucionan.
-                        <br>
-                          ILA19 es una gran oportunidad para conectar a líderes del diseño y la innovación, en pro de un mismo objetivo, la construcción de una sociedad mejor. </p>
-                      </div>
+                        <?php echo $lang['ila2']?>                        <br>
+                        <?php echo $lang['ila3']?>                      </div>
                       
                     </div>
                     
@@ -132,11 +134,9 @@
                         <h3 class="content__title tk-jaf-domus-titling-web">Medellín</h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc" style="text-align: left;">Medellín, la ciudad de la eterna primavera, con ofertas culturales, recreativas y/o de negocios.
-                        <br> Es la ciudad que más invierte en innovación en Colombia, ganando en el 2012 el premio internacional como "La ciudad más innovadora" premio otorgado por "The Wall Street Journal Magazine" y Citibank con la colaboración de "The Urban Land Institute".
+                        <p class="content__desc" style="text-align: left;"><?php echo $lang['med1']?>    
                         <br>
-                        La ciudad se ha ha convertido en centro de negocios en la región, y el destino turístico más popular en Suramérica.</p>
-                      </div>
+                        <?php echo $lang['med2']?>                          </div>
                     </div>
                 </div>
             </div>
@@ -146,25 +146,24 @@
                     <img class="content__img" src="<?php bloginfo('template_url'); ?>/img/image2/5.jpg" alt="Some image" />
                     <div class="content_info boleteria">
                       <div class="content-header" style="background-color: #C10FC9;">
-                        <h3 class="content__title tk-jaf-domus-titling-web">Boleteria</h3>
+                        <h3 class="content__title tk-jaf-domus-titling-web"><?php echo $lang['bol']?> </h3>
                       </div>
                       <div class="content_body">
-                        <p class="content__desc" align="left">Super Early bird <br>
-                         ¡No pierdas la oportunidad de obtener tus boletas al precio más bajo! 
-                         * o hasta agotar existencias!</p>
+                        <p class="content__desc" align="left"><?php echo $lang['bol1']?><br>
+                        <?php echo $lang['bol3']?></p>
                         <ul class="timeline">
                           <li>
-                            <p style="color: black; text-align: left;">Super Early bird: 14 de Noviembre al 15 de Diciembre</p>
+                            <p style="color: black; text-align: left;"><?php echo $lang['bol4']?></p>
                             <p style="color: black; text-align: left; font-weight: 100px;"> $ 100 USD</p>
                           </li>
                           <li>
-                            <p style="color: black; text-align: left;">14 de Noviembre de 2018 al 15 de Marxo 2019</p>
+                            <p style="color: black; text-align: left;"><?php echo $lang['bol5']?></p>
                             <p style="color: black; text-align: left; font-weight: 100px;"> $ 225 USD</p>
                           </li>
                           
                         </ul>
 
-                        <a class="button" href="https://www.ticketcode.co/eventos/ila19">comprar boletas</a>
+                        <a class="button" href="https://www.ticketcode.co/eventos/ila19"><?php echo $lang['videobuy']?></a>
                       </div>
                     </div>
 
@@ -186,18 +185,18 @@
             <section class="content content--related">
               <div class="content-wrap footer">
                 <br><br>
-                <h1 class="tk-jaf-domus-titling-web">PATROCINADORES</h1>
+                <h1 class="tk-jaf-domus-titling-web"><?php echo $lang['pat1']?></h1>
                 <div class="logo-footer">
                   <img src="<?php bloginfo('template_url'); ?>/img/image2/ixda_logos/patrocinador_footer.png" alt="logo footer" />
                 </div>
                 <hr>
                 <div class="footer-content">
-                  <a class="button">conviertete en patrocinador</a>
+                  <a class="button"><?php echo $lang['pat']?></a>
                   <p>
-                    Organizado por <span>ixda.org</span>
+                  <?php echo $lang['der2']?> <span>ixda.org</span>
                   </p>&nbsp;&nbsp;&nbsp;
                   <p>
-                    Mantenerse en contacto <span>ila19@ixda.org</span>
+                  <?php echo $lang['der1']?> <span>ila19@ixda.org</span>
                   </p>&nbsp;&nbsp;&nbsp;
                   <p>
                     Local <span>IxDA Medellin</span>
@@ -216,7 +215,7 @@
                   </div>
                 </div>
                 <br><br>
-                <h3 style="font-weight: bold;">Todo los derechos reservados 2018.</h3>
+                <h3 style="font-weight: bold;"><?php echo $lang['videobuy']?></h3>
               </div>
             </section>
 
